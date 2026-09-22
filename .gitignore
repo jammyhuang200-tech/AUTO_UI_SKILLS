@@ -1,0 +1,19 @@
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# Generated Python files
+__pycache__/
+*.py[cod]
+
+# Local artifacts
+test-results/
+artifacts/
+logs/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AMAX-5070 Desktop UI Automation"
+  short_description: "Run formal AMAX-5070 WinForms tests with typed controls and healing."
+  default_prompt: "Use $amax-5070-desktop-bridge to validate and run an AMAX-5070 TC YAML through the formal Runner and save auditable artifacts."
