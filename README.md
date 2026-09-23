@@ -25,15 +25,6 @@ and plugin caches are intentionally excluded.
 - [`ui-device-tree`](skills/ui-device-tree)
 - [`ui-mapping-table`](skills/ui-mapping-table)
 
-### AMAX domain operations
-
-- [`amax-analog-input-configuration`](skills/amax-analog-input-configuration)
-- [`analog-output-configuration`](skills/analog-output-configuration)
-- [`amax-communication-setting`](skills/amax-communication-setting)
-- [`amax-device-configuration`](skills/amax-device-configuration)
-- [`amax-firmware-update`](skills/amax-firmware-update)
-- [`amax-mapping-configuration`](skills/amax-mapping-configuration)
-
 ## Install in Codex
 
 To install one Skill, enter this in a Codex conversation and replace the final
@@ -58,12 +49,6 @@ skills/column-treeview
 skills/ui-data-grid
 skills/ui-device-tree
 skills/ui-mapping-table
-skills/amax-analog-input-configuration
-skills/analog-output-configuration
-skills/amax-communication-setting
-skills/amax-device-configuration
-skills/amax-firmware-update
-skills/amax-mapping-configuration
 ```
 
 The installer places the Skill in `$CODEX_HOME/skills`; when `CODEX_HOME` is
