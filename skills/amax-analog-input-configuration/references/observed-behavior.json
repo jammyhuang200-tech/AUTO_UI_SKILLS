@@ -1,0 +1,10 @@
+{
+  "component": "amax5017v_range",
+  "apply_button_component": "amax5017v_range_apply",
+  "items": ["+/-150 mV", "+/-500 mV", "+/-1 V", "+/-5 V", "+/-10 V", "0~150 mV", "0~ 500 mV", "0~1 V", "0~5 V", "0~10 V"],
+  "outcomes": ["stable-ai"],
+  "modal_titles": [],
+  "guard_before": "Off",
+  "guard_after": "Off",
+  "restoration_verified": true
+}

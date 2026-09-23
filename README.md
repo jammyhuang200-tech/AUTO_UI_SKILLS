@@ -5,18 +5,65 @@ and plugin caches are intentionally excluded.
 
 ## Available Skills
 
-### `amax-5070-desktop-bridge`
+### Agent and device orchestration
 
-Operate and test the Advantech I/O Module Utility for AMAX-5070 devices
-through Desktop Bridge and Computer Use.
+- [`amax-5070-desktop-bridge`](skills/amax-5070-desktop-bridge)
+
+### Basic UI components
+
+- [`ui-button`](skills/ui-button)
+- [`ui-checkbox`](skills/ui-checkbox)
+- [`ui-combobox`](skills/ui-combobox)
+- [`ui-edit`](skills/ui-edit)
+- [`ui-radiobutton`](skills/ui-radiobutton)
+- [`ui-tab`](skills/ui-tab)
+
+### Complex UI components
+
+- [`column-treeview`](skills/column-treeview)
+- [`ui-data-grid`](skills/ui-data-grid)
+- [`ui-device-tree`](skills/ui-device-tree)
+- [`ui-mapping-table`](skills/ui-mapping-table)
+
+### AMAX domain operations
+
+- [`amax-analog-input-configuration`](skills/amax-analog-input-configuration)
+- [`analog-output-configuration`](skills/analog-output-configuration)
+- [`amax-communication-setting`](skills/amax-communication-setting)
+- [`amax-device-configuration`](skills/amax-device-configuration)
+- [`amax-firmware-update`](skills/amax-firmware-update)
+- [`amax-mapping-configuration`](skills/amax-mapping-configuration)
 
 ## Install in Codex
 
-In a Codex conversation, enter:
+To install one Skill, enter this in a Codex conversation and replace the final
+path segment with the desired Skill name:
 
 ```text
 $skill-installer 請從以下 GitHub 路徑安裝 amax-5070-desktop-bridge：
 https://github.com/jammyhuang200-tech/AUTO_UI_SKILLS/tree/main/skills/amax-5070-desktop-bridge
+```
+
+To install all UI component and domain Skills together, enter:
+
+```text
+$skill-installer 請從 jammyhuang200-tech/AUTO_UI_SKILLS 安裝以下路徑：
+skills/ui-button
+skills/ui-checkbox
+skills/ui-combobox
+skills/ui-edit
+skills/ui-radiobutton
+skills/ui-tab
+skills/column-treeview
+skills/ui-data-grid
+skills/ui-device-tree
+skills/ui-mapping-table
+skills/amax-analog-input-configuration
+skills/analog-output-configuration
+skills/amax-communication-setting
+skills/amax-device-configuration
+skills/amax-firmware-update
+skills/amax-mapping-configuration
 ```
 
 The installer places the Skill in `$CODEX_HOME/skills`; when `CODEX_HOME` is
@@ -31,6 +78,9 @@ AUTO_UI_SKILLS/
       SKILL.md
       agents/
         openai.yaml
+    ui-button/
+      SKILL.md
+    ...
 ```
 
 ## Use after installation
@@ -39,6 +89,7 @@ Start a new Codex turn and invoke the Skill explicitly:
 
 ```text
 $amax-5070-desktop-bridge 請幫我執行 AMAX-5070 UI 自動化任務。
+$ui-button 請安全操作這個 Windows 按鈕並驗證結果。
 ```
 
 It can also trigger automatically when a request matches the `description`

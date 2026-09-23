@@ -1,0 +1,24 @@
+{
+  "cases": {
+    "amax5024_slew_rate": {
+      "component": "amax5024_slew_rate",
+      "apply_button_component": "amax5024_slew_apply",
+      "items": ["+/-1 V(mA) /s", "+/-2 V(mA) /s", "+/-4 V(mA) /s", "+/-8 V(mA) /s", "+/-16 V(mA) /s", "+/-32 V(mA) /s", "+/-64 V(mA) /s"],
+      "outcomes": ["stable-ai"],
+      "modal_titles": [],
+      "guard_before": "Off",
+      "guard_after": "Off",
+      "restoration_verified": true
+    },
+    "amax5024_range": {
+      "component": "amax5024_range",
+      "apply_button_component": "amax5024_range_apply",
+      "items": ["+/-5 V", "+/-10 V", "0~5 V", "0~10 V", "4~20 mA", "0~20 mA"],
+      "outcomes": ["information-modal"],
+      "modal_titles": ["Information"],
+      "guard_before": "Off",
+      "guard_after": "Off",
+      "restoration_verified": true
+    }
+  }
+}
