@@ -89,7 +89,6 @@ The repository layout is compatible with the installer:
 ```text
 AUTO_UI_SKILLS/
   Architecture and domain operations/
-    SKILLS.md
     auto-test-plan-authoring/
       SKILL.md
     page-object-view-maintenance/
